@@ -1,6 +1,6 @@
 FROM alpine:3.9
 
-RUN apk --update add --no-cache tini nodejs npm yarn
+RUN apk --update add --no-cache tini nodejs npm yarn bash
 ENTRYPOINT ["/sbin/tini", "--"]
 
 
