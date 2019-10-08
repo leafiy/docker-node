@@ -1,6 +1,6 @@
-FROM alpine:3.9
+FROM mhart/alpine-node:12
 
-RUN apk --update add --no-cache tini nodejs npm yarn bash
+RUN apk --update add --no-cache tini yarn bash
 ENTRYPOINT ["/sbin/tini", "--"]
 
 
