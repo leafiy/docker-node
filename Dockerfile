@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:12
+FROM mhart/alpine-node:14.16.1
 
 RUN apk --update add --no-cache tini bash
 ENTRYPOINT ["/sbin/tini", "--"]
